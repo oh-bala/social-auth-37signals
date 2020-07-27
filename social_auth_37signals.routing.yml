@@ -1,0 +1,27 @@
+social_auth_37signals.redirect_to_provider:
+  path: 'user/login/37signals'
+  defaults:
+    _controller: 'Drupal\social_auth_37signals\Controller\ThirtySevenSignalsAuthController::redirectToProvider'
+  requirements:
+    # Anonymous users can log in, but authenticated users can also associate a new provider.
+    _access: 'TRUE'
+  options:
+    no_cache: TRUE
+
+social_auth_37signals.callback:
+  path: '/user/login/37signals/callback'
+  defaults:
+    _controller: 'Drupal\social_auth_37signals\Controller\ThirtySevenSignalsAuthController::callback'
+  requirements:
+    # Anonymous users can log in, but authenticated users can also associate a new provider.
+    _access: 'TRUE'
+  options:
+    no_cache: TRUE
+
+social_auth_37signals.settings_form:
+  path: '/admin/config/social-api/social-auth/37signals'
+  defaults:
+    _title: 'Google Account Settings'
+    _form: 'Drupal\social_auth_37signals\Form\ThirtySevenSignalsAuthSettingsForm'
+  requirements:
+    _permission: 'administer social api authentication'

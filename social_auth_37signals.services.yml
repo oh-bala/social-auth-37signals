@@ -1,0 +1,7 @@
+services:
+  social_auth_37signals.manager:
+    class: Drupal\social_auth_37signals\ThirtySevenSignalsAuthManager
+    arguments:
+      - '@config.factory'
+      - '@logger.factory'
+      - '@request_stack'

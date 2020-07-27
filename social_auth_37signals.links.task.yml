@@ -1,0 +1,4 @@
+social_auth_37signals.settings.tab:
+  title: 'Social Auth 37Signals'
+  route_name: social_auth_37signals.settings_form
+  base_route: social_auth.integrations

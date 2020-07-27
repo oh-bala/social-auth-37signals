@@ -1,0 +1,24 @@
+{
+  "name": "drupal/social_auth_37signals",
+  "type": "drupal-module",
+  "description": "Social Auth 37Signals - Integration for 37Signals (Basecamp)",
+  "minimum-stability": "dev",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0-or-later",
+  "authors": [
+      {
+        "name": "Bala Wang",
+        "email": "bala@nexpcb.com"
+      }
+  ],
+  "require": {
+      "nilesuan/oauth2-thirtysevensignals": "dev-master",
+      "drupal/social_auth": "^2.0"
+  },
+  "repositories": [
+      {
+          "type": "vcs",
+          "url": "https://github.com/oh-bala/oauth2-thirtysevensignals.git"
+      }
+  ]
+}
