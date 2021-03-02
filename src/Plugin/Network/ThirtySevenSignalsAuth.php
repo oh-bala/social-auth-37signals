@@ -4,6 +4,7 @@
 namespace Drupal\social_auth_37signals\Plugin\Network;
 
 
+use Drupal\social_api\Plugin\NetworkBase;
 use Drupal\Core\Url;
 use Drupal\social_api\SocialApiException;
 use Drupal\social_auth_37signals\Settings\ThirtySevenSignalsAuthSettings;
@@ -24,7 +25,7 @@ use Nilesuan\OAuth2\Client\Provider\Thirtysevensignals as ThirtySevenSignals;
  *   }
  * )
  */
-class ThirtySevenSignalsAuth extends \Drupal\social_api\Plugin\NetworkBase
+class ThirtySevenSignalsAuth extends NetworkBase
 {
 
     /**

@@ -3,10 +3,11 @@
 
 namespace Drupal\social_auth_37signals\Form;
 
+use Drupal\social_auth\Form\SocialAuthSettingsForm;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 
-class ThirtySevenSignalsAuthSettingsForm extends \Drupal\social_auth\Form\SocialAuthSettingsForm
+class ThirtySevenSignalsAuthSettingsForm extends SocialAuthSettingsForm
 {
 
   /**
